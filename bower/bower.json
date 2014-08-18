@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "dependencies": {
+    "jquery-tokeninput": "latest",
+    "sugar": "latest",
+    "css_browser_selector": "latest"
+  },
+  "install": {
+    "path": "app/assets/bower",
+    "ignore": ["jquery"],
+    "sources": {
+      "jquery-tokeninput": [
+        "bower_components/jquery-tokeninput/src/jquery.tokeninput.js",
+        "bower_components/jquery-tokeninput/styles/token-input-facebook.css"
+      ],
+      "css_browser_selector" :[
+        "bower_components/css_browser_selector/css_browser_selector.min.js"
+      ]
+    }
+  }
+}
