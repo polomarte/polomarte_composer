@@ -1,0 +1,52 @@
+recipes:
+- setup
+- git
+- readme
+- gems
+- email
+- extras
+- locale
+- frontend
+- tests
+- init
+- admin
+- bower
+- heroku
+
+prefs:
+  :dev_webserver: puma
+  :prod_webserver: same
+  :database: postgresql
+  :pg_username: postgres
+  :pg_host: ''
+  :templates: slim
+  :fixtures: factory_girl
+  :frontend: bootstrap3
+  :form_builder: none
+  :email: mandrill
+  :authentication: devise
+  :devise_modules: default
+  :authorization: none
+  :pages: none
+  :locale: 'pt-BR'
+  :tests: rspec
+  :continuous_testing: guard
+  :ban_spiders: true
+  :github: true
+  :local_env_file: figaro
+  :quiet_assets: true
+  :better_errors: true
+  :pry: true
+  :rvmrc: false
+  :admin: activeadmin
+  :git: true
+
+gems:
+- newrelic_rpm
+- rollbar
+- awesome_print
+- data_migrate
+
+args:
+  :skip_test_unit: yes
+  :skip_active_record: false
