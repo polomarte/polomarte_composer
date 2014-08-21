@@ -20,39 +20,18 @@ class ImageUploader < CarrierWave::Uploader::Base
     ActionController::Base.helpers.image_path(file_path)
   end
 
-  version :fullscreen do
-    process resize_to_fill: [1920, 1080]
-  end
+  # version :fullscreen do
+  #   process resize_to_fill: [1920, 1080]
+  # end
 
-  version :slide do
-    # versao usada nas galerias
-    process resize_to_fill: [890, 445]
-  end
+  # version :blur do
+  #   process :gaussian_blur
+  # end
 
-  version :thumb_163x105 do
-    process resize_to_fill: [163, 105]
-  end
-
-  version :thumb_346x240 do
-    process resize_to_fill: [346, 240]
-  end
-
-  version :thumb_160 do
-    process resize_to_fit: [160, 160]
-  end
-
-  version :thumb_346 do
-    process resize_to_fit: [346, 346]
-  end
-
-  version :blur do
-    process :gaussian_blur
-  end
-
-  version :slide_blur do
-    process resize_to_fill: [890, 445]
-    process :gaussian_blur
-  end
+  # version :slide_blur do
+  #   process resize_to_fill: [890, 445]
+  #   process :gaussian_blur
+  # end
 
 protected
 
