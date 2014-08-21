@@ -37,7 +37,7 @@ prefs:
   :tests: rspec
   :continuous_testing: guard
   :ban_spiders: true
-  :github: true
+  :github: false
   :local_env_file: figaro
   :quiet_assets: true
   :better_errors: true
