@@ -21,8 +21,9 @@ prefs:
   :host_domain: xxxxx.com
   :dev_webserver: puma
   :prod_webserver: same
-  :database: sqlite
+  :database: postgresql
   :pg_username: postgres
+  :pg_password: ''
   :pg_host: ''
   :templates: slim
   :fixtures: factory_girl
