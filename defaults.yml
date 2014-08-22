@@ -6,6 +6,7 @@ recipes:
 - gon
 - email
 - extras
+- environment
 - locale
 - frontend
 - livereload

@@ -9,9 +9,22 @@
 
 * instalar e configurar a gem.
 
-## Uploader
+## Application
 
-* carrierwave
-* fog
-* mini_magick
-* setting s3 (criação bucket + setup das credenciais para uso no Fog)
+* copiar arquivo base
+
+## Heroku
+
+* rollbar
+* mandrill
+* new_relic
+
+## Mailer
+* mailtrap
+
+## Staging
+* duplicar arquivo de produção
+
+## Extra
+* timezone
+
