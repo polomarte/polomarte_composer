@@ -1,40 +1,39 @@
-DOMAIN_NAME:                      energiasustentaveldobrasil.com.br
-AWS_ACCESS_KEY_ID:                AKIAIELUP655TWWBUBVA
-AWS_SECRET_ACCESS_KEY:            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
-ADMIN_NAME:                       Admin
-ADMIN_EMAIL:                      admin@energiasustentaveldobrasil.com.br
-ADMIN_PASSWORD:                   '**esbr**'
-NEW_RELIC_LICENSE_KEY:            94fa9e1d316fa93ed72dcbb479fc6ea248abd7dd
-ROLLBAR_ACCESS_TOKEN:             b02f8f680d814f51820a6b89b29ce871
-ROLLBAR_ACCESS_TOKEN_CLIENT_SIDE: f14fca3ff30f4f059cf9877cdc5832dd
+DOMAIN_NAME:                      __host_name
+AWS_ACCESS_KEY_ID:                __aws_key_id
+AWS_SECRET_ACCESS_KEY:            __aws_secret_key
+ADMIN_EMAIL:                      admin@domain_name
+ADMIN_PASSWORD:                   **app_name**
+NEW_RELIC_LICENSE_KEY:            __new_relic_key
+ROLLBAR_ACCESS_TOKEN:             __rollbar_token
+ROLLBAR_ACCESS_TOKEN_CLIENT_SIDE: __rollbar_token_client
 
 development:
   RAILS_ENV:         production
   RACK_ENV:          production
   HOST:              'localhost:3000'
-  MAILTRAP_USER:     23328d39370aaf39e
-  MAILTRAP_PASSWORD: a9961459161b95
-  SECRET_KEY_BASE:   2704fdb43c89255f8c1bf34527254b58a18f12aab7a771dde81335f7f1d297474fae5076cb08261af0a30de60914969b0afbe7f974026ba023a9647b496e79e7
+  MAILTRAP_USER:     __dev_mailtrap_user
+  MAILTRAP_PASSWORD: __dev_mailtrap_password
+  SECRET_KEY_BASE:   __dev_secret_key
 
 test:
   RAILS_ENV:       test
   RACK_ENV:        test
-  SECRET_KEY_BASE: a4f64c6424afab8d050bdb0ce563e5581176ec90bea05206664b1c6b4e065644983416d842aa47ae47088455ab8ea88871666f7bf0d1990ba56d3ab8a96a99df
+  SECRET_KEY_BASE: __test_secret_key
 
 staging:
   RAILS_ENV:         staging
   RACK_ENV:          staging
-  HOST:              staging.energiasustentaveldobrasil.com.br
-  FOG_DIRECTORY:     assets.staging.energiasustentaveldobrasil.com.br
-  MAILTRAP_USER:     233287b258dcc48d9
-  MAILTRAP_PASSWORD: a83276cd807c3b
-  SECRET_KEY_BASE:   cd66423807f53f4ac51c27da549378e17ea10bbb910e79d9299b8af4fd54aff3a47f9675a1a349a6d7b3e1ebda3499426c9387088ce70df28adfb0404a58fd7a
+  HOST:              __staging_host
+  FOG_DIRECTORY:     __staging_fog_dir
+  MAILTRAP_USER:     __staging_mailtrap_user
+  MAILTRAP_PASSWORD: __staging_mailtrap_pwd
+  SECRET_KEY_BASE:   __staging_secret_key
 
 production:
   RAILS_ENV:         production
   RACK_ENV:          production
-  HOST:              www.energiasustentaveldobrasil.com.br
-  FOG_DIRECTORY:     assets.production.energiasustentaveldobrasil.com.br
-  MANDRILL_USERNAME: app28670551@heroku.com
-  MANDRILL_APIKEY:   VgiZVLUYZPi6IGXt1QEVPw
-  SECRET_KEY_BASE:   b9b5d5a87e0b9b4a0f18bb927366224b6086481d2f44ab0eb34209da483c75b43caabc01020c372f825137f0c4b9f9d054c7255db0134bb1c0328d399afe493e
+  HOST:              __prod_host
+  FOG_DIRECTORY:     __prod_fog_dir
+  MANDRILL_USERNAME: __prod_mailtrap_user
+  MANDRILL_APIKEY:   __prod_mailtrap_pwd
+  SECRET_KEY_BASE:   __prod_secret_key
