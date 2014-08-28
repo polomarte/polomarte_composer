@@ -1,39 +1,39 @@
-DOMAIN_NAME:                      __host_name
-AWS_ACCESS_KEY_ID:                __aws_key_id
-AWS_SECRET_ACCESS_KEY:            __aws_secret_key
+DOMAIN_NAME:                      {{host_name}}
+AWS_ACCESS_KEY_ID:                {{aws_key_id}}
+AWS_SECRET_ACCESS_KEY:            {{aws_secret_key}}
 ADMIN_EMAIL:                      admin@domain_name
-ADMIN_PASSWORD:                   **app_name**
-NEW_RELIC_LICENSE_KEY:            __new_relic_key
-ROLLBAR_ACCESS_TOKEN:             __rollbar_token
-ROLLBAR_ACCESS_TOKEN_CLIENT_SIDE: __rollbar_token_client
+ADMIN_PASSWORD:                   "**app_name**"
+NEW_RELIC_LICENSE_KEY:            {{new_relic_key}}
+ROLLBAR_ACCESS_TOKEN:             {{rollbar_token}}
+ROLLBAR_ACCESS_TOKEN_CLIENT_SIDE: {{rollbar_token_client}}
 
 development:
   RAILS_ENV:         production
   RACK_ENV:          production
   HOST:              'localhost:3000'
-  MAILTRAP_USER:     __dev_mailtrap_user
-  MAILTRAP_PASSWORD: __dev_mailtrap_password
-  SECRET_KEY_BASE:   __dev_secret_key
+  MAILTRAP_USER:     {{dev_mailtrap_user}}
+  MAILTRAP_PASSWORD: {{dev_mailtrap_password}}
+  SECRET_KEY_BASE:   {{dev_secret_key}}
 
 test:
   RAILS_ENV:       test
   RACK_ENV:        test
-  SECRET_KEY_BASE: __test_secret_key
+  SECRET_KEY_BASE: {{test_secret_key}}
 
 staging:
   RAILS_ENV:         staging
   RACK_ENV:          staging
-  HOST:              __staging_host
-  FOG_DIRECTORY:     __staging_fog_dir
-  MAILTRAP_USER:     __staging_mailtrap_user
-  MAILTRAP_PASSWORD: __staging_mailtrap_pwd
-  SECRET_KEY_BASE:   __staging_secret_key
+  HOST:              {{staging_host}}
+  FOG_DIRECTORY:     {{staging_fog_dir}}
+  MAILTRAP_USER:     {{staging_mailtrap_user}}
+  MAILTRAP_PASSWORD: {{staging_mailtrap_pwd}}
+  SECRET_KEY_BASE:   {{staging_secret_key}}
 
 production:
   RAILS_ENV:         production
   RACK_ENV:          production
-  HOST:              __prod_host
-  FOG_DIRECTORY:     __prod_fog_dir
-  MANDRILL_USERNAME: __prod_mailtrap_user
-  MANDRILL_APIKEY:   __prod_mailtrap_pwd
-  SECRET_KEY_BASE:   __prod_secret_key
+  HOST:              {{prod_host}}
+  FOG_DIRECTORY:     {{prod_fog_dir}}
+  MANDRILL_USERNAME: {{prod_mailtrap_user}}
+  MANDRILL_APIKEY:   {{prod_mailtrap_pwd}}
+  SECRET_KEY_BASE:   {{prod_secret_key}}
