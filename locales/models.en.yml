@@ -1,0 +1,26 @@
+en:
+  models_attributes_and_errors: &models_attributes_and_errors
+    models:
+      sample:
+        one: sample
+        other: samples
+
+    attributes:
+      shared_attributes: &shared_attributes
+        attr_created: Created at
+        attr_updated: Updated at
+      sample_model:
+        <<: *shared_attributes
+
+    errors:
+      models:
+        sample:
+          attributes:
+            sample_attr:
+              error_key: "%{value} ...."
+
+  activerecord:
+    <<: *models_attributes_and_errors
+
+  activemodel:
+    <<: *models_attributes_and_errors
