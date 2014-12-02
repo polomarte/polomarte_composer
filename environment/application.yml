@@ -32,7 +32,7 @@ staging:
 production:
   RAILS_ENV:         production
   RACK_ENV:          production
-  HOST:              {{prod_host}}
+  HOST:              {{host_name}}
   FOG_DIRECTORY:     {{prod_fog_dir}}
   MANDRILL_USERNAME: {{mandrill_username}}
   MANDRILL_APIKEY:   {{mandrill_apikey}}
