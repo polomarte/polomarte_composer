@@ -1,7 +1,7 @@
 {
   "name": "",
   "dependencies": {
-    "jquery-tokeninput": "latest",
+    "select2": "latest",
     "sugar": "latest",
     "css_browser_selector": "latest"
   },
