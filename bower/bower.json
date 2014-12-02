@@ -1,9 +1,10 @@
 {
   "name": "",
   "dependencies": {
-    "select2": "latest",
-    "sugar": "latest",
-    "css_browser_selector": "latest"
+    "sugar":                "latest",
+    "css_browser_selector": "latest",
+    "select2":              "latest",
+    "imagesloaded":         "latest"
   },
   "install": {
     "path": "app/assets/bower",
