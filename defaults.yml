@@ -20,6 +20,7 @@ recipes:
 
 prefs:
   :host_domain: xxxxx.com
+  :heroku_app_name: heroku_app_name # Both production and staging should be created before
   :dev_webserver: puma
   :prod_webserver: same
   :database: postgresql
