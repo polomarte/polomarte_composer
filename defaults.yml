@@ -4,7 +4,6 @@ recipes:
 - readme
 - gems
 - gon
-- email
 - extras
 - environment
 - locale
@@ -31,7 +30,6 @@ prefs:
   :fixtures: factory_girl
   :frontend: bootstrap3
   :form_builder: none
-  :email: mandrill
   :authentication: devise
   :devise_modules: default
   :authorization: none
