@@ -25,8 +25,8 @@ staging:
   RACK_ENV:          staging
   HOST:              {{staging_host}}
   FOG_DIRECTORY:     {{staging_fog_dir}}
-  MAILTRAP_USER:     {{staging_mailtrap_user}}
-  MAILTRAP_PASSWORD: {{staging_mailtrap_pwd}}
+  MAILTRAP_USER:     {{mailtrap_user}}
+  MAILTRAP_PASSWORD: {{mailtrap_password}}
   SECRET_KEY_BASE:   {{staging_secret_key}}
 
 production:
@@ -34,6 +34,6 @@ production:
   RACK_ENV:          production
   HOST:              {{prod_host}}
   FOG_DIRECTORY:     {{prod_fog_dir}}
-  MANDRILL_USERNAME: {{prod_mailtrap_user}}
-  MANDRILL_APIKEY:   {{prod_mailtrap_pwd}}
+  MANDRILL_USERNAME: {{mandrill_username}}
+  MANDRILL_APIKEY:   {{mandrill_apikey}}
   SECRET_KEY_BASE:   {{prod_secret_key}}
