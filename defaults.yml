@@ -3,6 +3,7 @@ recipes:
 - git
 - readme
 - gems
+- gems_marte
 - gon
 - extras
 - environment
