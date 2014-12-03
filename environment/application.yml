@@ -10,8 +10,8 @@ ROLLBAR_ACCESS_TOKEN:             {{rollbar_token}}
 ROLLBAR_ACCESS_TOKEN_CLIENT_SIDE: {{rollbar_token_client}}
 
 development:
-  RAILS_ENV:          production
-  RACK_ENV:           production
+  RAILS_ENV:          development
+  RACK_ENV:           development
   HOST:               'localhost:3000'
   MAILTRAP_USER:      {{dev_mailtrap_user}}
   MAILTRAP_PASSWORD:  {{dev_mailtrap_password}}
