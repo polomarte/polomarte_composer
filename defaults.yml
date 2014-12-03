@@ -57,6 +57,7 @@ gems:
 - awesome_print
 - data_migrate
 - premailer-rails
+- dalli
 
 args:
   :skip_test_unit: yes
