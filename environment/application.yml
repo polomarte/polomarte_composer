@@ -1,9 +1,11 @@
+
 DOMAIN_NAME:                      {{host_name}}
 AWS_ACCESS_KEY_ID:                {{aws_key_id}}
 AWS_SECRET_ACCESS_KEY:            {{aws_secret_key}}
 ADMIN_EMAIL:                      {{admin_email}}
 ADMIN_PASSWORD:                   {{admin_password}}
 NEW_RELIC_LICENSE_KEY:            {{new_relic_key}}
+NEW_RELIC_APP_NAME:               {{new_relic_app_name}}
 ROLLBAR_ACCESS_TOKEN:             {{rollbar_token}}
 ROLLBAR_ACCESS_TOKEN_CLIENT_SIDE: {{rollbar_token_client}}
 
