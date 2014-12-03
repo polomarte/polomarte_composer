@@ -26,6 +26,15 @@ module
       g.fixture_replacement :factory_girl, dir: 'spec/factories'
     end
 
+    # Dalli settings
+    config.cache_store = :dalli_store, ENV['MEMCACHIER_SERVERS'], {
+      username:             ENV['MEMCACHIER_USERNAME'],
+      password:             ENV['MEMCACHIER_PASSWORD'],
+      failover:             true,
+      socket_timeout:       1.5,
+      socket_failure_delay: 0.2,
+      namespace:            -> {I18n.locale}}
+
     # ActionMailer Config
     config.action_mailer.default_url_options = {host: ENV['HOST']}
     config.action_mailer.delivery_method = :smtp
