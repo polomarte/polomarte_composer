@@ -1,0 +1,6 @@
+# Run bins like spring from bin/ project dir
+PATH=./bin:$PATH
+
+# Unset a possible AWS keys previously setted
+unset AWS_ACCESS_KEY_ID
+unset AWS_SECRET_ACCESS_KEY
