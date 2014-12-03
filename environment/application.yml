@@ -10,12 +10,13 @@ ROLLBAR_ACCESS_TOKEN:             {{rollbar_token}}
 ROLLBAR_ACCESS_TOKEN_CLIENT_SIDE: {{rollbar_token_client}}
 
 development:
-  RAILS_ENV:         production
-  RACK_ENV:          production
-  HOST:              'localhost:3000'
-  MAILTRAP_USER:     {{dev_mailtrap_user}}
-  MAILTRAP_PASSWORD: {{dev_mailtrap_password}}
-  SECRET_KEY_BASE:   {{dev_secret_key}}
+  RAILS_ENV:          production
+  RACK_ENV:           production
+  HOST:               'localhost:3000'
+  MAILTRAP_USER:      {{dev_mailtrap_user}}
+  MAILTRAP_PASSWORD:  {{dev_mailtrap_password}}
+  MEMCACHIER_SERVERS: localhost:11211
+  SECRET_KEY_BASE:    {{dev_secret_key}}
 
 test:
   RAILS_ENV:       test
