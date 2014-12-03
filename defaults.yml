@@ -16,6 +16,7 @@ recipes:
 - bower
 - heroku
 - upload
+- rollbar
 
 prefs:
   :host_domain: xxxxx.com
