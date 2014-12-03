@@ -19,6 +19,7 @@ recipes:
 - heroku
 - upload
 - rollbar
+- newrelic
 
 prefs:
   :host_domain: xxxxx.com
