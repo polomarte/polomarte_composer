@@ -53,6 +53,7 @@ gems:
 - rollbar
 - awesome_print
 - data_migrate
+- premailer-rails
 
 args:
   :skip_test_unit: yes
