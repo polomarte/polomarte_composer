@@ -1,7 +1,6 @@
 recipes:
 - setup
 - git
-- readme
 - gems
 - gems_marte
 - gon
@@ -10,7 +9,6 @@ recipes:
 - locale
 - i18n
 - frontend
-- livereload
 - tests
 - tests_extra
 - init
@@ -40,7 +38,7 @@ prefs:
   :pages: none
   :locale: 'pt-BR'
   :tests: rspec
-  :continuous_testing: guard
+  :continuous_testing: false
   :ban_spiders: true
   :github: false
   :local_env_file: figaro
