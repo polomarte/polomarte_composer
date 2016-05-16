@@ -4,7 +4,8 @@
     "sugar":                "latest",
     "css_browser_selector": "latest",
     "select2":              "latest",
-    "imagesloaded":         "latest"
+    "imagesloaded":         "latest",
+    "slick-carousel":       "~1.5.9"
   },
   "install": {
     "path": "app/assets/bower",
@@ -14,9 +15,20 @@
         "bower_components/jquery-tokeninput/src/jquery.tokeninput.js",
         "bower_components/jquery-tokeninput/styles/token-input-facebook.css"
       ],
-      "css_browser_selector" :[
+      "css_browser_selector": [
         "bower_components/css_browser_selector/css_browser_selector.min.js"
-      ]
+      ],
+      "slick-carousel": {
+        "mapping": [
+          {"bower_components/slick-carousel/slick/fonts/slick.ttf": "fonts/slick.ttf"},
+          {"bower_components/slick-carousel/slick/fonts/slick.woff": "fonts/slick.woff"},
+          {"bower_components/slick-carousel/slick/fonts/slick.eot": "fonts/slick.eot"},
+          {"bower_components/slick-carousel/slick/slick.js": "slick.js"},
+          {"bower_components/slick-carousel/slick/slick.css": "slick.css"},
+          {"bower_components/slick-carousel/slick/slick-theme.css": "slick-theme.css"},
+          {"bower_components/slick-carousel/slick/ajax-loader.gif": "ajax-loader.gif"}
+        ]
+      }
     }
   }
 }
