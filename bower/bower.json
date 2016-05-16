@@ -2,7 +2,7 @@
   "name": "",
   "dependencies": {
     "sugar":                "latest",
-    "select2":              "latest",
+    "selectize":            "0.12.1",
     "imagesloaded":         "latest",
     "slick-carousel":       "~1.5.9"
   },
