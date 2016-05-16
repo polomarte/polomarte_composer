@@ -2,7 +2,6 @@
   "name": "",
   "dependencies": {
     "sugar":                "latest",
-    "css_browser_selector": "latest",
     "select2":              "latest",
     "imagesloaded":         "latest",
     "slick-carousel":       "~1.5.9"
@@ -11,9 +10,6 @@
     "path": "app/assets/bower",
     "ignore": ["jquery"],
     "sources": {
-      "css_browser_selector": [
-        "bower_components/css_browser_selector/css_browser_selector.min.js"
-      ],
       "slick-carousel": {
         "mapping": [
           {"bower_components/slick-carousel/slick/fonts/slick.ttf": "fonts/slick.ttf"},
