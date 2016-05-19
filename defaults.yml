@@ -50,6 +50,8 @@ prefs:
   :admin: activeadmin
   :git: true
   :jsruntime: true
+  :disable_turbolinks: false
+  :rubocop: false
 
 gems:
 - newrelic_rpm
