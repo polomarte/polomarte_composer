@@ -37,6 +37,6 @@ production:
   RACK_ENV:          production
   HOST:              {{host_name}}
   FOG_DIRECTORY:     {{prod_fog_dir}}
-  MANDRILL_USERNAME: {{mandrill_username}}
-  MANDRILL_APIKEY:   {{mandrill_apikey}}
+  SENDGRID_PASSWORD: {{sendgrid_password}}
+  SENDGRID_USERNAME: {{sendgrid_username}}
   SECRET_KEY_BASE:   {{prod_secret_key}}
