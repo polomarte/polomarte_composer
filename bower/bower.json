@@ -1,10 +1,12 @@
 {
   "name": "",
   "dependencies": {
-    "sugar":                "latest",
-    "selectize":            "0.12.1",
-    "imagesloaded":         "latest",
-    "slick-carousel":       "~1.5.9"
+    "sugar":            "latest",
+    "selectize":        "0.12.1",
+    "imagesloaded":     "4.1.0",
+    "slick-carousel":   "~1.5.9",
+    "imgLiquid":        "~0.9.944",
+    "jQuery.dotdotdot": "1.7.4"
   },
   "install": {
     "path": "app/assets/bower",
