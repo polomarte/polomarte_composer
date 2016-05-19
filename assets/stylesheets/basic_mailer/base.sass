@@ -1,0 +1,93 @@
+table.body
+  background-color: #eee
+
+.header .logo
+  display: inline-block
+  float: none
+  margin-top: 30px
+
+.padded-content
+  padding: 0 40px
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td
+  font: 300 16px/1.4em $helveticaFallback
+  color: lighten(black, 30%)
+  -webkit-font-smoothing: antialiased
+
+table.container
+  background-color: white
+  margin-top: 70px
+  margin-bottom: 70px
+
+table.header
+  margin: 0 auto 30px
+  background-color: white
+
+  td.last
+    padding-top: 0
+
+tbody
+  width: 100%
+  display: table
+
+#greeting
+  margin-bottom: 15px
+  padding-bottom: 10px
+  border-bottom: 1px solid lighten(black, 80%)
+  text-align: center
+
+  span
+    color: $blue
+    font-size: 23px
+    line-height: 1em
+    font-style: italic
+    display: inline-block
+    background-color: white
+
+#actions
+  margin-top: 50px
+  text-align: center
+
+  a
+    color: white !important
+    background-color: $purple
+    text-decoration: none
+    border-radius: 20px
+    padding: 15px 25px
+    text-transform: uppercase
+    font: 300 16px/1.3em $helveticaFallback
+
+    &:hover
+      background-color: darken($purple, 8%)
+
+.item-wrapper
+  margin-bottom: 20px
+
+  .item-label
+    font-weight: bold
+
+  .item-value
+
+table.footer
+  margin-top: 50px
+  padding: 10px 0
+
+  td.wrapper.last
+    background-color: white
+
+  a
+    text-decoration: none
+    background-color: white
+    padding: 0 8px
+    font-size: 14px
+
+    &, &:visited
+      color: $purple !important
+
+    &:hover
+      color: $purpleLight !important
+
+  hr
+    border: none
+    height: 0px
+    border-top: 1px solid lighten(black, 80%)
