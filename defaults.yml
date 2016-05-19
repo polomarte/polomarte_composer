@@ -18,6 +18,7 @@ recipes:
 - upload
 - rollbar
 - newrelic
+- livereload
 
 prefs:
   :host_domain: xxxxx.com
