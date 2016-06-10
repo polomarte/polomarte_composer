@@ -1,7 +1,6 @@
 if ActiveRecord::Base.connection.table_exists? 'components'
   ADMIN_PAGE_COMPONENTS = {
     'Page Name' => [
-      'x:y:x',
     ]}
 
   ADMIN_PAGE_COMPONENTS.each_pair do |page_name, component_keys|
