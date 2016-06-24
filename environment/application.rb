@@ -43,5 +43,13 @@ module
 
     config.i18n.default_locale = :'pt-BR'
     config.time_zone = 'Brasilia'
+
+    Globalize.fallbacks = {
+      :'pt-BR' => [:'pt-BR', :en],
+      :en      => [:en, :'pt-BR']}
+
+    RouteTranslator.config do |config|
+      config.generate_unlocalized_routes = true
+    end
   end
 end
