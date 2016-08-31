@@ -16,13 +16,18 @@ CarrierWave.configure do |config|
   end
 end
 
-# https://github.com/jnicklas/carrierwave/wiki/How-to%3A-Specify-the-image-quality
 module CarrierWave
   module MiniMagick
-    def quality(percentage)
+    # https://coderwall.com/p/ryzmaa/use-imagemagick-to-create-optimised-and-progressive-jpgs
+    def optimize_jpeg
       manipulate! do |img|
-        img.quality(percentage.to_s)
-        img = yield(img) if block_given?
+        return img unless img.mime_type.match /image\/jpeg/
+        img.strip
+        img.combine_options do |c|
+            c.quality '80'
+            c.depth '8'
+            c.interlace 'plane'
+        end
         img
       end
     end
