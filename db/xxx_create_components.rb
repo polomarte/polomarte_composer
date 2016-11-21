@@ -7,6 +7,8 @@ class CreateComponents < ActiveRecord::Migration
       t.column :h1, :string
       t.column :h2, :string
       t.column :text, :text
+      t.column :video_mp4, :string
+      t.column :video_ogg, :string
       t.column :data, :text
       t.column :affix_nav_navegable, :boolean, default: false
       t.column :file, :string
